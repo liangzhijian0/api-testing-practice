@@ -42,15 +42,15 @@ public class RestAssuredExercises4Test {
     private static String accessToken;
 
     public static void retrieveOAuthToken() {
-//        accessToken = given().
-//                auth().
-//                preemptive().
-//                basic("oauth", "gimmeatoken").
-//                spec(requestSpec).
-//                when().
-//                get("/oauth2/token").
-//                then().
-//                statusCode();
+        accessToken = given().
+                auth().
+                preemptive().
+                basic("oauth", "gimmeatoken").
+                spec(requestSpec).
+                when().
+                get("/oauth2/token").
+                then().
+                extract().path("access_token");
     }
 
     /*******************************************************
@@ -66,10 +66,10 @@ public class RestAssuredExercises4Test {
     public void checkNumberOfPayments() {
 
         given().
+                spec(requestSpec).
                 auth().
                 preemptive().
-                basic("oauth", "gimmeatoken").
-                spec(requestSpec).
+                oauth2(accessToken).
                 when().
                 get("/payments").
                 then()
