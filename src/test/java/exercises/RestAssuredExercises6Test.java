@@ -8,6 +8,8 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.MatcherAssert.assertThat;
 
 public class RestAssuredExercises6Test {
 
@@ -55,10 +57,12 @@ public class RestAssuredExercises6Test {
 	@Test
 	public void checkThatRetrievingAnAlfaRomeoGiuliaShowsModelYear2016() {
 
-		given().
-			spec(requestSpec).
-		when();
-
-		// Put your assert here
+		Car car =
+			given().
+					spec(requestSpec).
+					when().
+					get("/car/getcar/alfaromeogiulia").
+					as(Car.class);
+		assertThat(car.getYear(),equalTo(2016));
 	}
 }

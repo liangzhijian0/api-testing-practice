@@ -60,8 +60,8 @@
       <file leaf-file-name="RestAssuredExercises6Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises6Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+            <state relative-caret-position="300">
+              <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -598,7 +598,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RestAssuredExercises6Test.checkThatPostingA2012FordFocusReturnsHttp200">
+  <component name="RunManager" selected="JUnit.RestAssuredExercises6Test">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -615,52 +615,6 @@
       <option name="PACKAGE_NAME" value="exercises" />
       <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises5Test" />
       <option name="METHOD_NAME" value="checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-testing-practice_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercises.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="exercises" />
-      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises5Test" />
-      <option name="METHOD_NAME" value="checkFourthSpeedRecordWasSetbyAnAstonMartin" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-testing-practice_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercises.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="exercises" />
-      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises5Test" />
-      <option name="METHOD_NAME" value="checkThreeRecordsHaveBeenSetByCarsFromTheUK" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -694,6 +648,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="RestAssuredExercises6Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-testing-practice_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="exercises" />
+      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises6Test" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration name="RestAssuredExercises6Test.checkThatPostingA2012FordFocusReturnsHttp200" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="api-testing-practice_test" />
       <extension name="coverage">
@@ -707,6 +684,29 @@
       <option name="PACKAGE_NAME" value="exercises" />
       <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises6Test" />
       <option name="METHOD_NAME" value="checkThatPostingA2012FordFocusReturnsHttp200" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RestAssuredExercises6Test.checkThatRetrievingAnAlfaRomeoGiuliaShowsModelYear2016" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-testing-practice_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="exercises" />
+      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises6Test" />
+      <option name="METHOD_NAME" value="checkThatRetrievingAnAlfaRomeoGiuliaShowsModelYear2016" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -756,19 +756,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin" />
-      <item itemvalue="JUnit.RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" />
       <item itemvalue="JUnit.RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" />
       <item itemvalue="JUnit.RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz" />
       <item itemvalue="JUnit.RestAssuredExercises6Test.checkThatPostingA2012FordFocusReturnsHttp200" />
+      <item itemvalue="JUnit.RestAssuredExercises6Test.checkThatRetrievingAnAlfaRomeoGiuliaShowsModelYear2016" />
+      <item itemvalue="JUnit.RestAssuredExercises6Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestAssuredExercises6Test" />
+        <item itemvalue="JUnit.RestAssuredExercises6Test.checkThatRetrievingAnAlfaRomeoGiuliaShowsModelYear2016" />
         <item itemvalue="JUnit.RestAssuredExercises6Test.checkThatPostingA2012FordFocusReturnsHttp200" />
         <item itemvalue="JUnit.RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz" />
         <item itemvalue="JUnit.RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" />
-        <item itemvalue="JUnit.RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" />
-        <item itemvalue="JUnit.RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin" />
       </list>
     </recent_temporary>
   </component>
@@ -782,20 +782,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532917604750</updated>
-      <workItem from="1532917606319" duration="21459000" />
+      <workItem from="1532917606319" duration="21704000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestAssuredExercises5Test_checkFourthSpeedRecordWasSetbyAnAstonMartin - 2018.07.30 at 21h 19m 47s.xml">
-      <configuration name="RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises5Test_checkThreeRecordsHaveBeenSetByCarsFromTheUK - 2018.07.30 at 21h 21m 22s.xml">
-      <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises5Test_checkThreeRecordsHaveBeenSetByCarsFromTheUK - 2018.07.30 at 21h 29m 23s.xml">
-      <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestAssuredExercises5Test_checkThreeRecordsHaveBeenSetByCarsFromTheUK - 2018.07.30 at 21h 29m 34s.xml">
       <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" configurationId="JUnit" />
     </history-entry>
@@ -817,9 +808,18 @@
     <history-entry file="RestAssuredExercises5Test_checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz - 2018.07.30 at 21h 44m 06s.xml">
       <configuration name="RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RestAssuredExercises6Test_checkThatPostingA2012FordFocusReturnsHttp200 - 2018.07.30 at 21h 47m 10s.xml">
+      <configuration name="RestAssuredExercises6Test.checkThatPostingA2012FordFocusReturnsHttp200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises6Test_checkThatPostingA2012FordFocusReturnsHttp200 - 2018.07.30 at 21h 48m 11s.xml">
+      <configuration name="RestAssuredExercises6Test.checkThatPostingA2012FordFocusReturnsHttp200" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises6Test_checkThatPostingA2012FordFocusReturnsHttp200 - 2018.07.30 at 21h 48m 33s.xml">
+      <configuration name="RestAssuredExercises6Test.checkThatPostingA2012FordFocusReturnsHttp200" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21459000" />
+    <option name="totallyTimeSpent" value="21704000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -865,7 +865,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -1016,8 +1016,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises6Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="40" column="14" lean-forward="true" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
+        <state relative-caret-position="300">
+          <caret line="59" column="34" selection-start-line="59" selection-start-column="34" selection-end-line="59" selection-end-column="34" />
         </state>
       </provider>
     </entry>
