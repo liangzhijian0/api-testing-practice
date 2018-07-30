@@ -54,7 +54,7 @@ public class RestAssuredExercises5Test {
 		when().
 			get("/xml/speedrecords").
 		then().
-			body("speedrecords.car[3].@make",equalTo("Aston Martin"));
+			body("speedrecords.car[4].@make",equalTo("Aston Martin"));
 	}
 	
 	/*******************************************************
@@ -66,11 +66,13 @@ public class RestAssuredExercises5Test {
 	
 	@Test
 	public void checkThreeRecordsHaveBeenSetByCarsFromTheUK() {
-		
+
 		given().
-			spec(requestSpec).
-		when().
-		then();
+				spec(requestSpec).
+				when().
+				get("/xml/speedrecords").
+				then().
+				body("speedrecords.car[3].@country",equalTo("UK"));
 	}
 	
 	/*******************************************************
