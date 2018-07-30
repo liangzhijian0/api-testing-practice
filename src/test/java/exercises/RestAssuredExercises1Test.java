@@ -1,6 +1,7 @@
 package exercises;
 
 import io.restassured.builder.RequestSpecBuilder;
+import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -60,12 +61,14 @@ public class RestAssuredExercises1Test {
      ******************************************************/
 
     @Test
-    public void checkResponseContentTypeJson() {
+    public void check_response_content_type_is_json() {
 
         given().
                 spec(requestSpec).
                 when().
-                then();
+                get("/2014/1/circuits.json").
+                then().
+                contentType(ContentType.JSON);
     }
 
     /***********************************************
