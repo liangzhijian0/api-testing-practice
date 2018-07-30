@@ -53,7 +53,8 @@ public class RestAssuredExercises4Test {
                 when().
                 get("/oauth2/token").
                 then().
-                extract().path("access_token");
+                extract()
+                .path("access_token");
     }
 
     /*******************************************************
