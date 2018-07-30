@@ -63,8 +63,13 @@ public class RestAssuredExercises3Test {
 
 
     static void getNinthDriverId() {
-
-
+        ninthDriverId = given().
+                when().
+                spec(requestSpec).
+                get("/2016/drivers.json").
+                then().
+                extract().
+                path("MRData.DriverTable.Drivers[8].driverId");
     }
 
     /*******************************************************
@@ -97,10 +102,13 @@ public class RestAssuredExercises3Test {
 
     @Test
     public void useExtractedDriverId() {
-
+        System.out.println(ninthDriverId);
         given().
+                pathParam("driverId", ninthDriverId).
                 spec(requestSpec).
-                when().
-                then();
+                when().log().all().
+                get("/drivers/{driverId}.json").
+                then().
+                body("MRData.DriverTable.Drivers[0].nationality",equalTo("German"));
     }
 }
