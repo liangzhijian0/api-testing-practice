@@ -35,6 +35,15 @@ public class RestAssuredExercises2Test {
 		);
 	}
 
+	static Stream<Arguments> driverDataProvider2() {
+		return Stream.of(
+				Arguments.of("1", "1"),
+				Arguments.of("2", "3"),
+				Arguments.of("3", "2"),
+				Arguments.of("4", "2")
+		);
+	}
+
 	/*******************************************************
 	 * Use junit-jupiter-params for @ParameterizedTest that
 	 * specifies in which country
@@ -63,6 +72,18 @@ public class RestAssuredExercises2Test {
 	 * pit stops Max Verstappen made
 	 * (race 1 = 1 pitstop, 2 = 3, 3 = 2, 4 = 2)
 	 ******************************************************/
+	@ParameterizedTest
+	@MethodSource("driverDataProvider2")
+	public  void should_return_pitstop_when_send_the_number(String driverName, String permanentNumber) {
+		given().
+				pathParam("number", driverName).
+				spec(requestSpec).
+				when().log().all().
+				get("/2015/{number}/drivers/max_verstappen/pitstops.json").
+				then().
+				assertThat().
+				body("MRData.total", equalTo(permanentNumber));
+	}
 
 	//todo
 
@@ -74,15 +95,10 @@ public class RestAssuredExercises2Test {
 	
 	@Test
 	public void checkCountryForCircuit() {
-		
-//		given().
-//			spec(requestSpec).
-//		when().
-//		then();
-		given().pathParam("country","Italy")
-				.when().log().all()
-				.get("/circuits/monza/{country}.json")
-				.then().statusCode(200);
+		given().
+				spec(requestSpec).
+				when().
+				then();
 	}
 	
 	/*******************************************************
