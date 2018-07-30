@@ -28,7 +28,7 @@ public class RestAssuredExercises1Test {
      ******************************************************/
 
     @Test
-    public void checkResponseCodeForCorrectRequest() {
+    public void check_response_code_for_correct_request() {
 
         given().
                 spec(requestSpec).
@@ -44,12 +44,14 @@ public class RestAssuredExercises1Test {
      ******************************************************/
 
     @Test
-    public void checkResponseCodeForIncorrectRequest() {
+    public void check_response_code_for_incorrect_request() {
 
         given().
                 spec(requestSpec).
                 when().
-                then();
+                get("/incorrect.json").
+                then().
+                statusCode(404);
     }
 
     /*******************************************************
