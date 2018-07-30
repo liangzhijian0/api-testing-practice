@@ -7,6 +7,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.containsString;
 
 
 public class RestAssuredExercises1Test {
@@ -79,12 +80,14 @@ public class RestAssuredExercises1Test {
      **********************************************/
 
     @Test
-    public void checkTheFirstRaceOf2014WasAtAlbertPark() {
+    public void check_the_first_race_of_2014_was_at_AlbertPark() {
 
         given().
                 spec(requestSpec).
                 when().
-                then();
+                get("/2014/circuits.json").
+                then().
+                body("MRData.CircuitTable.Circuits[0].circuitName",containsString("Albert Park"));
     }
 
     /***********************************************
