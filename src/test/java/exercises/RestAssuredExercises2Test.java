@@ -4,8 +4,14 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
+
+import java.util.stream.Stream;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.equalTo;
 
 
 public class RestAssuredExercises2Test {
@@ -21,7 +27,14 @@ public class RestAssuredExercises2Test {
 			setBasePath("/api/f1").
 			build();
 	}
-	
+
+	static Stream<Arguments> driverDataProvider() {
+		return Stream.of(
+				Arguments.of("spa", "Belgium"),
+				Arguments.of("monza", "Italy")
+		);
+	}
+
 	/*******************************************************
 	 * Use junit-jupiter-params for @ParameterizedTest that
 	 * specifies in which country
@@ -30,6 +43,19 @@ public class RestAssuredExercises2Test {
 	 ******************************************************/
 
 	//todo
+	@ParameterizedTest
+	@MethodSource("driverDataProvider")
+	public  void should_return_country_when_send_the_name(String driverName, String permanentNumber) {
+		given().
+				pathParam("name", driverName).
+				spec(requestSpec).
+				when().log().all().
+				get("/circuits/{name}.json").
+				then().
+				assertThat().
+				body("MRData.CircuitTable.Circuits[0].Location.country", equalTo(permanentNumber));
+	}
+
 
 	/*******************************************************
 	 * Use junit-jupiter-params for @ParameterizedTest that specifies for all races
@@ -49,10 +75,14 @@ public class RestAssuredExercises2Test {
 	@Test
 	public void checkCountryForCircuit() {
 		
-		given().
-			spec(requestSpec).
-		when().
-		then();
+//		given().
+//			spec(requestSpec).
+//		when().
+//		then();
+		given().pathParam("country","Italy")
+				.when().log().all()
+				.get("/circuits/monza/{country}.json")
+				.then().statusCode(200);
 	}
 	
 	/*******************************************************

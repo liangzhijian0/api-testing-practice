@@ -5,6 +5,9 @@ import io.restassured.http.ContentType;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.provider.Arguments;
+
+import java.util.stream.Stream;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.hasItems;
@@ -26,6 +29,14 @@ public class RestAssuredExercises1Test {
                 setBasePath("/api/f1").
                 build();
     }
+
+    static Stream<Arguments> driverDataProvider() {
+        return Stream.of(
+                Arguments.of("hamilton", "44"),
+                Arguments.of("max_verstappen", "33")
+        );
+    }
+
 
     /*******************************************************
      * Send a GET request to /2016/drivers.json
